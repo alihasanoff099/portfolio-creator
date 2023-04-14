@@ -3,7 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
+* {
 
+    outline: 1px solid red;
+}
 body {
     font-family: 'Roboto', sans-serif;
 
@@ -99,7 +102,44 @@ a{
 
    }
 
+/* introduction section start */
 
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+.introduction h1 {
+font-size: 4.5rem;
+font-weight: 700;
+min-width: 600px;
+
+
+}
+.introduction h1 span {
+    color: #FF8A56;
+}
+
+.introduction .intro-left-side {
+    padding-top: 134px;
+    padding-left: 113px;
+}
+
+.intro-right-side {
+
+    background-color: red;
+    padding-top:70px;
+    min-width: 400px;
+}
+
+.intro-right-side img{
+width: 100%;
+
+
+}
+/* introduction section end */
 
 
 
