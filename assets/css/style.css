@@ -7,6 +7,12 @@
 
     outline: 1px solid red;
 }
+
+:root {
+--span-orange:#FF8A56;
+
+
+}
 body {
     font-family: 'Roboto', sans-serif;
 
@@ -108,39 +114,85 @@ a{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    
 
 }
 
 .introduction h1 {
-font-size: 4.5rem;
+font-size: 3.8rem;
 font-weight: 700;
-min-width: 600px;
+min-width: 400px;
 
 
 }
 .introduction h1 span {
-    color: #FF8A56;
+    color:var(--span-orange)
 }
 
 .introduction .intro-left-side {
-    padding-top: 134px;
+    padding-top: 117px;
     padding-left: 113px;
+    min-width: 560px;
 }
 
 .intro-right-side {
-
-    background-color: red;
+    
     padding-top:70px;
-    min-width: 400px;
+    min-width: 500px;
+    height: 400px;
 }
 
 .intro-right-side img{
 width: 100%;
+height: 100%;
+object-fit: contain;
+
+}
+
+
+    
+
+/* introduction section end */
+
+@media(max-width:1200px) {
+.introduction {
+
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+.intro-left-side h1 {
+font-size: 2.5rem;
 
 
 }
-/* introduction section end */
+.intro-left-side {
+    min-width: 500px;
+}
+
+.intro-right-side {
+    min-width: 450px;
+}
 
 
 
+}
+
+@media(max-width:1108px) {
+    .introduction{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:620px){
+   .intro-left-side h1 {
+    font-size: 2.4rem;
+    text-align: center;
+
+
+   }
+   .intro-left-side {
+    min-width: 360px;
+   }
+}
 
